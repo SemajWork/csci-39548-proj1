@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/earth.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html" aria-current="page">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Earth</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg" alt="Earth" width="400" data-source="https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg/960px-NASA-Apollo8-Dec24-Earthrise.jpg" alt="Earth" width="400" data-source="https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about Earth</h2>
+            <ul>
+                <li>Earth has a diameter of about 12,742 km.</li>
+                <li>It is about 150 million km (1 AU) from the Sun.</li>
+                <li>A day lasts about 24 hours and a year about 365.25 days.</li>
+                <li>About 71% of Earth's surface is covered by water.</li>
+                <li>Earth has one moon and is the only planet known to support life.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Earth Quiz</h2>
+            <p>How much of Earth's surface is covered by water?</p>
+            <button class="answer" data-correct="false">About 30%</button>
+            <button class="answer" data-correct="false">About 50%</button>
+            <button class="answer" data-correct="true">About 71%</button>
+            <p id="quiz-feedback"></p>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/earth.js"></script>
+</body>
+</html>

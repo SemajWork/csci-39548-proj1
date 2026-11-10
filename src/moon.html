@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/moon.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html" aria-current="page">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>The Moon</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg" alt="Moon" width="400" data-source="https://commons.wikimedia.org/wiki/File:FullMoon2010.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Aldrin_Apollo_11_original.jpg/960px-Aldrin_Apollo_11_original.jpg" alt="Moon" width="400" data-source="https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11_original.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about the Moon</h2>
+            <ul>
+                <li>The Moon has a diameter of about 3,474 km.</li>
+                <li>It orbits Earth at an average distance of about 384,400 km.</li>
+                <li>Its gravity is about 1/6 of Earth's.</li>
+                <li>It takes about 27.3 days to orbit Earth, and the same side always faces us.</li>
+                <li>Twelve astronauts walked on the Moon during the Apollo missions (1969&ndash;1972).</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Phases of the Moon</h2>
+            <p>Drag the slider to see how the Moon changes over a month.</p>
+            <h3 id="phase-name"></h3>
+            <input type="range" id="phase-slider" min="0" max="7" value="0">
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/moon.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jupiter.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html" aria-current="page">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Jupiter</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg" alt="Jupiter" width="400" data-source="https://commons.wikimedia.org/wiki/File:Jupiter_and_its_shrunken_Great_Red_Spot.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Red_Spot_From_Voyager_1.jpg" alt="Jupiter" width="400" data-source="https://commons.wikimedia.org/wiki/File:Great_Red_Spot_From_Voyager_1.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about Jupiter</h2>
+            <ul>
+                <li>Jupiter is the largest planet, with a diameter of about 139,820 km.</li>
+                <li>It is about 778 million km from the Sun.</li>
+                <li>A day on Jupiter lasts only about 10 hours.</li>
+                <li>A year on Jupiter lasts about 12 Earth years.</li>
+                <li>Its Great Red Spot is a storm larger than Earth, and it has more than 90 known moons.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>What Would You Weigh on Jupiter?</h2>
+            <p>Jupiter's gravity is about 2.5 times stronger than Earth's.</p>
+            <input type="number" id="weight-input" placeholder="Your weight on Earth">
+            <button id="weight-button">Calculate</button>
+            <p id="weight-result"></p>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/jupiter.js"></script>
+</body>
+</html>

@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="module" src="./mapper/main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James's Webpage :)</title>
+    <title>Home | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <h1>Hello world :)</h1>
-    <button id="hello-button">Click Me</button>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Exploring Our Solar System</h1>
+
+        <!-- Introduction to the solar system -->
+        <section>
+            <h2>Welcome</h2>
+            <p>
+                Our solar system formed about 4.6 billion years ago from a giant cloud of gas and dust.
+                At its center is the Sun, a star that holds almost all of the system's mass. Eight planets
+                orbit the Sun: the rocky inner planets Mercury, Venus, Earth, and Mars, and the giant outer
+                planets Jupiter, Saturn, Uranus, and Neptune. Use the links above to visit the Sun, the Moon,
+                and the planets.
+            </p>
+        </section>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/960px-Planets2013.svg.png" alt="Solar System" width="400" data-source="https://commons.wikimedia.org/wiki/File:Planets2013.svg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/ESO_-_Milky_Way.jpg/960px-ESO_-_Milky_Way.jpg" alt="Milky Way" width="400" data-source="https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg">
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Random Space Fact</h2>
+            <p id="fact-text">Click the button to learn something new about space!</p>
+            <button id="fact-button">Show me a fact</button>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

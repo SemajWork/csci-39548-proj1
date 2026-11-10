@@ -1,0 +1,15 @@
+/* Uranus page theme */
+
+/* Background: Hubble deep field, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg/1920px-NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Futura, "Century Gothic", sans-serif;
+    color: #9ff0f0;
+}

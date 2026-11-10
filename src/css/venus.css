@@ -1,0 +1,15 @@
+/* Venus page theme */
+
+/* Background: Venus volcano radar image, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Maat_Mons_on_Venus.jpg/1920px-Maat_Mons_on_Venus.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: "Palatino Linotype", Palatino, serif;
+    color: #f5d491;
+}

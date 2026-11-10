@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sun | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sun.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html" aria-current="page">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>The Sun</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/960px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg" alt="Sun" width="400" data-source="https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg/960px-Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg" alt="Sun" width="400" data-source="https://commons.wikimedia.org/wiki/File:Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about the Sun</h2>
+            <ul>
+                <li>The Sun is a star, about 4.6 billion years old.</li>
+                <li>Its diameter is about 1.39 million km, roughly 109 times wider than Earth.</li>
+                <li>It holds about 99.8% of all the mass in the solar system.</li>
+                <li>Its surface is about 5,500 &deg;C, and its core reaches about 15 million &deg;C.</li>
+                <li>Sunlight takes about 8 minutes and 20 seconds to reach Earth.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Sun Fun Facts</h2>
+            <p>Want to know some surprising things about our star?</p>
+            <button id="open-modal">Open fun facts</button>
+        </section>
+
+        <!-- Fun facts pop-up (hidden until the button is clicked) -->
+        <div id="sun-modal" class="modal" hidden>
+            <div class="modal-box">
+                <button id="close-modal" class="modal-close" aria-label="Close">&times;</button>
+                <h2>Did you know?</h2>
+                <ul>
+                    <li>About 1.3 million Earths could fit inside the Sun.</li>
+                    <li>The Sun is about halfway through its life, with roughly 5 billion years left.</li>
+                    <li>Every second, the Sun turns about 4 million tons of matter into energy.</li>
+                    <li>The Sun is not on fire. Its light comes from nuclear fusion in its core.</li>
+                    <li>The Sun spins faster at its equator (about 25 days) than at its poles (about 35 days).</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/sun.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Earth page theme */
+
+/* Background: city lights seen from space, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/ISS-65_Night_lights_of_South_Africa.jpg/1920px-ISS-65_Night_lights_of_South_Africa.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #7fd1ff;
+}

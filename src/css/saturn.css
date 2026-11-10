@@ -1,0 +1,53 @@
+/* Saturn page theme */
+
+/* Background: Saturn backlit by the Sun, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/PIA17172_Saturn_eclipse_mosaic_bright_crop.jpg/1920px-PIA17172_Saturn_eclipse_mosaic_bright_crop.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Didot, "Bodoni MT", Georgia, serif;
+    color: #f0d9a0;
+}
+
+/* Area that holds the Saturn drawing */
+.saturn-model {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+/* The planet: a striped circle */
+.saturn-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    border-radius: 50%;
+    background: linear-gradient(#e8d29a, #c9a865, #e8d29a, #b8955a);
+}
+
+/* The ring: a thick circle outline that saturn.js squashes to tilt it */
+.saturn-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 30px solid rgba(222, 200, 150, 0.8);
+    box-sizing: border-box;
+}
+
+/* Copy of the planet's top half drawn over the ring, so the back of the ring looks hidden */
+.saturn-front {
+    clip-path: inset(0 0 50% 0);
+    z-index: 1;
+}

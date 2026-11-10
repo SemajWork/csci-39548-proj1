@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/venus.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html" aria-current="page">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Venus</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/PIA23791-Venus-NewlyProcessedView-20200608.jpg/960px-PIA23791-Venus-NewlyProcessedView-20200608.jpg" alt="Venus" width="400" data-source="https://commons.wikimedia.org/wiki/File:PIA23791-Venus-NewlyProcessedView-20200608.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/960px-Venus_globe.jpg" alt="Venus" width="400" data-source="https://commons.wikimedia.org/wiki/File:Venus_globe.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about Venus</h2>
+            <ul>
+                <li>Venus is the hottest planet, with surface temperatures around 465 &deg;C.</li>
+                <li>It is about 108 million km from the Sun.</li>
+                <li>Venus spins backward, so the Sun rises in the west there.</li>
+                <li>One rotation takes 243 Earth days, longer than its 225-day year.</li>
+                <li>Venus has no moons, and its thick carbon dioxide air presses about 90 times harder than Earth's.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Earth's Evil Twin</h2>
+            <p>
+                Venus is almost the same size as Earth, which is why it is sometimes called Earth's twin.
+                But underneath its bright clouds, it is one of the most dangerous places in the solar system.
+            </p>
+            <div id="more-text" hidden>
+                <p>
+                    The thick carbon dioxide atmosphere traps heat in a runaway greenhouse effect, making
+                    the surface hot enough to melt lead.
+                </p>
+                <p>
+                    The clouds are made of sulfuric acid, and the air pressure on the ground is like being
+                    about 900 meters deep in Earth's ocean.
+                </p>
+                <p>
+                    Spacecraft that have landed on Venus survived for only about 2 hours or less before the
+                    heat and pressure destroyed them.
+                </p>
+            </div>
+            <button id="read-more">Read more</button>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/venus.js"></script>
+</body>
+</html>

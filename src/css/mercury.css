@@ -1,0 +1,28 @@
+/* Mercury page theme */
+
+/* Background: Mercury crater photo, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://upload.wikimedia.org/wikipedia/commons/6/64/Crater_Hokusai%2C_Mercury%2C_MESSENGER.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    color: #c8c8c8;
+}
+
+/* Temperature box: orange in the day */
+.temp-box {
+    padding: 10px;
+    background-color: orange;
+    color: black;
+}
+
+/* Dark blue at night (class added by mercury.js) */
+.temp-box.night {
+    background-color: darkblue;
+    color: white;
+}

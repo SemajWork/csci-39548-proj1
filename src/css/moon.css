@@ -1,0 +1,15 @@
+/* Moon page theme */
+
+/* Background: Apollo 11 bootprint photo, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Apollo_11_bootprint.jpg/1920px-Apollo_11_bootprint.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #e6e6f0;
+}

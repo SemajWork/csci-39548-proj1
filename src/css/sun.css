@@ -1,0 +1,20 @@
+/* Sun page theme */
+
+/* Background: solar eruption photo, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Impact, "Arial Black", sans-serif;
+    color: #ffb347;
+}
+
+/* Pop-up heading stays black on the white box */
+.modal-box h2 {
+    color: black;
+}

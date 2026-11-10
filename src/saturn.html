@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/saturn.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html" aria-current="page">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Saturn</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/960px-Saturn_during_Equinox.jpg" alt="Saturn" width="400" data-source="https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg/960px-Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg" alt="Saturn" width="400" data-source="https://commons.wikimedia.org/wiki/File:Saturn_from_Cassini_Orbiter_%282004-10-06%29.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about Saturn</h2>
+            <ul>
+                <li>Saturn has a diameter of about 116,460 km.</li>
+                <li>It is about 1.4 billion km from the Sun.</li>
+                <li>A day lasts about 10.7 hours, and a year about 29.5 Earth years.</li>
+                <li>Its rings are made mostly of chunks of ice and rock.</li>
+                <li>Saturn is less dense than water, and it has the most known moons of any planet.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Tilt the Rings</h2>
+            <p>From Earth, Saturn's rings look wide open in some years and nearly vanish in others.</p>
+            <div class="saturn-model">
+                <div class="saturn-body"></div>
+                <div id="ring" class="saturn-ring"></div>
+                <div class="saturn-body saturn-front"></div>
+            </div>
+            <input type="range" id="tilt-slider" min="0" max="30" value="20">
+            <p id="tilt-text"></p>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/saturn.js"></script>
+</body>
+</html>

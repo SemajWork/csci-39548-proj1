@@ -1,0 +1,15 @@
+/* Jupiter page theme */
+
+/* Background: close-up of the Great Red Spot, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://upload.wikimedia.org/wikipedia/commons/e/ec/Great_Red_Spot_From_Voyager_1.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #e8b98a;
+}

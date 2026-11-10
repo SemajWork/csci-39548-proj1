@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mercury.css">
+</head>
+<body>
+    <!-- Navigation: links to all 10 pages -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html" aria-current="page">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main>
+        <h1>Mercury</h1>
+
+        <!-- Pictures (click one to see its source) -->
+        <section class="images">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/960px-Mercury_in_true_color.jpg" alt="Mercury" width="400" data-source="https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/960px-Mercury_in_color_-_Prockter07-edit1.jpg" alt="Mercury" width="400" data-source="https://commons.wikimedia.org/wiki/File:Mercury_in_color_-_Prockter07-edit1.jpg">
+        </section>
+
+        <!-- Facts -->
+        <section>
+            <h2>Facts about Mercury</h2>
+            <ul>
+                <li>Mercury is the smallest planet, with a diameter of about 4,879 km.</li>
+                <li>It is the closest planet to the Sun, about 58 million km away.</li>
+                <li>A year on Mercury lasts only 88 Earth days.</li>
+                <li>Temperatures swing from about 430 &deg;C in the day to about -180 &deg;C at night.</li>
+                <li>Mercury has no moons.</li>
+            </ul>
+        </section>
+
+        <!-- Interactive JavaScript feature -->
+        <section id="feature" class="feature">
+            <h2>Hot Days, Freezing Nights</h2>
+            <div id="temp-box" class="temp-box">
+                <p id="temp-value" class="temp-value">Day: 430 °C</p>
+            </div>
+            <button id="temp-button">Switch to night</button>
+        </section>
+    </main>
+
+    <!-- Scripts go last so the page content above already exists -->
+    <script src="js/image-popups.js"></script>
+    <script src="js/mercury.js"></script>
+</body>
+</html>

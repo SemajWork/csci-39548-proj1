@@ -1,0 +1,85 @@
+/* Mars page theme */
+
+/* Background: Curiosity rover on Mars, with a dark layer on top so the text is readable */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/PIA16239_High-Resolution_Self-Portrait_by_Curiosity_Rover_Arm_Camera.jpg/1920px-PIA16239_High-Resolution_Self-Portrait_by_Curiosity_Rover_Arm_Camera.jpg");
+}
+
+/* Heading font and color for this page */
+h1,
+h2,
+h3 {
+    font-family: Copperplate, "Copperplate Gothic Bold", "Arial Black", sans-serif;
+    color: #ff6b3d;
+}
+
+/* Area that holds Mars and its two moons */
+.orbit-system {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 10px auto;
+}
+
+/* Mars in the center, shaded to look round */
+.mars-ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #f0995f, #b5431c 60%, #4a1505);
+}
+
+/* Each orbit is a dashed circle that spins; the moon dot rides on its edge */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    animation: orbit-spin linear infinite;
+}
+
+/* Phobos: closer and faster */
+.orbit-phobos {
+    width: 140px;
+    height: 140px;
+    margin: -70px 0 0 -70px;
+    animation-duration: 3s;
+}
+
+/* Deimos: farther and about 4 times slower */
+.orbit-deimos {
+    width: 240px;
+    height: 240px;
+    margin: -120px 0 0 -120px;
+    animation-duration: 12s;
+}
+
+/* The moon itself */
+.moon-dot {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    border-radius: 50%;
+    background-color: #d8c8b4;
+}
+
+/* mars.js adds the "paused" class to freeze the orbits */
+.orbit-system.paused .orbit {
+    animation-play-state: paused;
+}
+
+/* One full turn */
+@keyframes orbit-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

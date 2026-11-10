@@ -1,0 +1,90 @@
+/* Shared styles used by every page */
+
+/* Base text and background settings (each page's CSS adds its own background image) */
+body {
+    margin: 0;
+    color: white;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Space around the page content */
+main {
+    padding: 20px;
+}
+
+/* Page title */
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Navigation bar: one row of links spread across the top */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkgray;
+    padding: 12px 20px;
+}
+
+/* Nav links: black with no underline */
+nav a,
+nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Turn blue when hovered or clicked */
+nav a:hover,
+nav a:active {
+    color: #1e6fd9;
+}
+
+/* Pictures centered side by side */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Shrink pictures on small screens; pointer shows they can be clicked */
+.images img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Dark box that holds each page's interactive feature */
+.feature {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Pop-up: dark layer over the whole screen (Sun fun facts and image pop-ups) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* White box in the middle of the pop-up */
+.modal-box {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
