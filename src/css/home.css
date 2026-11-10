@@ -1,20 +1,9 @@
 /* Home page theme */
 
-/* Background: starry black sky drawn with CSS */
+/* Background: starfield photo, with a dark layer on top so the text is readable */
 body {
-    background-color: black;
-    /* each radial-gradient is one small star, repeated across the page */
-    background-image:
-        radial-gradient(1px 1px at 20px 30px, white, transparent),
-        radial-gradient(1px 1px at 90px 140px, white, transparent),
-        radial-gradient(1.5px 1.5px at 160px 60px, white, transparent),
-        radial-gradient(1px 1px at 230px 190px, #cfd8ff, transparent),
-        radial-gradient(2px 2px at 300px 90px, white, transparent),
-        radial-gradient(1px 1px at 60px 250px, #fff4d6, transparent),
-        radial-gradient(1.5px 1.5px at 340px 270px, white, transparent);
-    background-size: 370px 310px, 250px 230px, 410px 290px, 330px 380px, 520px 470px, 290px 350px, 450px 400px;
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Starsinthesky.jpg/1920px-Starsinthesky.jpg");
 }
 
 /* Heading font and color for this page */
